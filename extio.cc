@@ -33,8 +33,8 @@ void Extio::extio_area()
 	io_area = (g_ip->num_dq + g_ip->num_dqs + g_ip->num_ca + g_ip->num_clk) *
             single_io_area;
 	
-	printf("IO Area (sq.mm) = ");
-	cout << io_area << endl;
+	//printf("IO Area (sq.mm) = ");
+	//cout << io_area << endl;
 
 }
 
@@ -126,8 +126,8 @@ void Extio::extio_power_term()
 	  }
 
 
-	printf("IO Termination and Bias Power (mW) = ");
-	cout << io_power_term << endl;
+	//printf("IO Termination and Bias Power (mW) = ");
+	//cout << io_power_term << endl;
 }
 
 
@@ -175,10 +175,10 @@ void Extio::extio_power_phy ()
   phy_wtime = io_param->phy_pll_wtime + io_param->phy_phase_rotator_wtime + io_param->phy_rx_wtime + io_param->phy_bandgap_wtime + io_param->phy_deskew_wtime + io_param->phy_vrefgen_wtime; // Total Wakeup time from SLEEP to ACTIVE. Some of the Wakeup time can be hidden if all components do not need to be serially brought out of SLEEP. This depends on the implementation and user can modify the Wakeup times accordingly. 
 
 
-	printf("PHY Power (mW) = ");
-	cout << phy_power << " ";
-	printf("PHY Wakeup Time (us) = ");
-	cout << phy_wtime << endl;
+	//printf("PHY Power (mW) = ");
+	//cout << phy_power << " ";
+	//printf("PHY Wakeup Time (us) = ");
+	//cout << phy_wtime << endl;
 
 }
 
@@ -343,8 +343,8 @@ void Extio::extio_power_dynamic()
   }
 
 
-	printf("IO Dynamic Power (mW) = ");
-	cout << io_power_dynamic << " ";
+	//printf("IO Dynamic Power (mW) = ");
+	//cout << io_power_dynamic << " ";
 }
 
 
@@ -498,9 +498,9 @@ void Extio::extio_eye()
 	//OUTPUTS
 
 
-	printf("IO Timing Margin (ps) = ");
-	cout << io_tmargin <<endl;
-	printf("IO Votlage Margin (V) = ");
-	cout << io_vmargin << endl;
+	//printf("IO Timing Margin (ps) = ");
+	//cout << io_tmargin <<endl;
+	//printf("IO Votlage Margin (V) = ");
+	//cout << io_vmargin << endl;
 
 }

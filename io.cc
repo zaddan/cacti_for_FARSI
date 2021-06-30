@@ -1231,7 +1231,7 @@ uca_org_t cacti_interface(const string & infile_name)
   if(!g_ip->error_checking())
 	  exit(0);
  // if (g_ip->print_input_args)
-    g_ip->display_ip();
+    //g_ip->display_ip();
 	
 
   init_tech_params(g_ip->F_sz_um, false);
@@ -1335,7 +1335,7 @@ uca_org_t cacti_interface(const string & infile_name)
   
   solve(&fin_res);
 
-  output_UCA(&fin_res);
+  //output_UCA(&fin_res);
   output_data_csv(fin_res, infile_name + ".out");
 
 
